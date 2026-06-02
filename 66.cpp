@@ -8,5 +8,9 @@ int main(){
     for(int i = 1 ; i <= num ; i++){
         cout<<i*i<<endl;
     }
+    cout<<"for cubes: ";
+    for(int i = 1 ; i <= num ; i++){
+        cout<<i*i*i<<endl;
+    }
     return 0;
 }
