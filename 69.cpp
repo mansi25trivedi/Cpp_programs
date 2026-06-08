@@ -8,5 +8,13 @@ int main(){
     for(int i= 1; i<=n ; i++){
         cout<<"*";
     }
+    cout<<endl;
+    cout<<"Print Square of Stars (n x n Stars)"<<endl;
+    for(int k=1 ; k<=n ; k++){
+        for(int j =1 ; j<=n ; j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
     return 0;
 }
