@@ -16,5 +16,12 @@ int main(){
         }
         cout<<endl;
     }
+    cout<<endl<<"Print an Increasing Triangle of Stars"<<endl;
+    for(int j=1 ; j<=n ; j++){
+        for(int k=1; k<=j; k++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
     return 0;
 }
