@@ -23,5 +23,16 @@ int main(){
         }
         cout<<endl;
     }
+
+    cout<<endl<<"Print a Right-Aligned Triangle of Stars"<<endl;
+    for(int  i = 1 ; i <=n ; i++){
+        for(int k=n-i ;k>=1 ; k--){
+            cout<<" ";
+        }
+        for(int j = n-i+1 ; j<=n ; j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
     return 0;
 }
