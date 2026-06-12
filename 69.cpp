@@ -34,5 +34,21 @@ int main(){
         }
         cout<<endl;
     }
+
+    cout<<endl<<"Print Stars in Even Numbers (2, 4, 6, 8, 10)"<<endl;
+    for(int i = 1 ; i <=n ; i++){
+        for (int j = 1; j<=i ; j++){
+            cout<<"**";
+        }
+        cout<<endl;
+    }
+
+    cout<<endl<<" Print Stars in Odd Numbers (1, 3, 5, 7, 9)"<<endl;
+    for(int i = 0 ; i <=n ; i++){
+        for(int j=1 ; j<=(2*i + 1); j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
     return 0;
 }
