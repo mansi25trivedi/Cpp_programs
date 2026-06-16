@@ -83,5 +83,12 @@ int main(){
         }
         cout<<endl;
     }
+    cout<<endl<<" Print Repeated Numbers per Row (Same Number Repeated) "<<endl;
+    for(int i = 1 ; i <=n;i++){
+        for(int j=1 ; j<=i ; j++){
+            cout<<i;
+        }
+        cout<<endl;
+    }
     return 0;
 }
