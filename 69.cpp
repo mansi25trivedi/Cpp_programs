@@ -90,5 +90,14 @@ int main(){
         }
         cout<<endl;
     }
+
+    cout<<endl<<"print the numbers in succesive order "<<endl;
+    int c = 1;
+    for(int i = 1; i <=n ; i++){
+        for(int j =1 ; j<=i ; j++){
+            cout<<c++<<" ";
+        }
+        cout<<endl;
+    }
     return 0;
 }
