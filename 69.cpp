@@ -99,5 +99,25 @@ int main(){
         }
         cout<<endl;
     }
+
+    cout<<endl<<"print the numbers from 0 to 9 only ,in repetetion"<<endl;
+    int num = 1;
+    for(int i = 1 ; i <= n ; i++){
+        for(int j= 1 ; j<=i ; j++){
+            cout<<(num % 10)<<" ";
+            num++;
+        }
+        cout<<endl;
+    }
+
+    cout<<endl<<"print the alternate pattern of 0 and 1 "<<endl;
+    int n1=1;
+    for(int i=0;i<n ; i++){
+        for(int j = 0 ; j <=i ; j++){
+            cout<<(n1%2)<<" ";
+            n1++;
+        }
+        cout<<endl;
+    }
     return 0;
 }
