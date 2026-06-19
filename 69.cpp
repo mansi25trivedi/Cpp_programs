@@ -119,5 +119,14 @@ int main(){
         }
         cout<<endl;
     }
+
+    cout<<endl<<"print the pattern of alphabests in succecive order"<<endl;
+    char ch = 'A';
+    for(int i = 0 ; i <=n ; i++){
+        for(int j = 0; j <=i ; j++){
+            cout<<ch++<<" ";
+        }
+        cout<<endl;
+    }
     return 0;
 }
