@@ -128,5 +128,14 @@ int main(){
         }
         cout<<endl;
     }
+    cout<<endl<<"print the succesive alphabetic pattern such that the alphabet remains same in each row"<<endl;
+    char chh='A';
+    for(int i=1 ; i<=n ; i++){
+        for(int j =1 ; j<=i ; j++){
+            cout<<chh<<" ";
+        }
+        chh++;
+        cout<<endl;
+    }
     return 0;
 }
