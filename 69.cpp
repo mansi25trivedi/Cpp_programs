@@ -137,5 +137,15 @@ int main(){
         chh++;
         cout<<endl;
     }
+
+    cout<<endl<<"print the succcessive alphabet pattern for eachh new line"<<endl;
+    for(int i = 0 ; i <=n ; i++){
+        char ch = 'A';
+        for(int j =0 ; j<=i ; j++){
+            
+            cout<<ch++<<" ";
+        }
+        cout<<endl;
+    }
     return 0;
 }
