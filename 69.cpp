@@ -147,5 +147,16 @@ int main(){
         }
         cout<<endl;
     }
+    cout<<endl<<"prinnt the reverse succesive alphabet in reverse triangle"<<endl;
+    char chhh='A';
+    for(int i = 0 ; i <n ; i++){
+        for(int j = n-1-i ; j >0; j--){
+            cout<<" "<<" ";
+        }
+        for(int k = 0 ; k<=i ; k++){
+            cout<<chhh++<<" ";
+        }
+        cout<<endl;
+    }
     return 0;
 }
