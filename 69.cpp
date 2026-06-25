@@ -119,7 +119,6 @@ int main(){
         }
         cout<<endl;
     }
-
     cout<<endl<<"print the pattern of alphabests in succecive order"<<endl;
     char ch = 'A';
     for(int i = 0 ; i <=n ; i++){
@@ -137,7 +136,6 @@ int main(){
         chh++;
         cout<<endl;
     }
-
     cout<<endl<<"print the succcessive alphabet pattern for eachh new line"<<endl;
     for(int i = 0 ; i <=n ; i++){
         char ch = 'A';
@@ -160,7 +158,6 @@ int main(){
     }
 
     cout<<endl<<"centered no pyramid"<<endl;
-
     for(int i = 1 ; i <= n; i++){
         for(int j=n-1-i ; j>=0 ;j--){
             cout<<" ";
@@ -173,7 +170,6 @@ int main(){
         }
         cout<<endl;
     }
-
     cout<<endl<<"upward and inveted triangle together"<<endl;
     for(int i = 0 ; i <n ; i++){
         for(int j = 0 ; j <=i ; j++){
@@ -183,6 +179,20 @@ int main(){
     }
     for(int i = n-1 ; i>=1 ; i--){
         for(int j = i ; j>=1 ; j--){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+
+    cout<<endl<<"inverted complete and upwardcompllete triangle together"<<endl;
+    for(int i = 0 ; i <=n ; i++){
+    for(int j = 0 ; j < i ; j++){
+    cout<<"* ";
+       }
+    cout<<endl;
+    }
+    for(int i = n ; i >=1 ; i--){
+        for(int j = 0 ; j<=i ; j++){
             cout<<"* ";
         }
         cout<<endl;
