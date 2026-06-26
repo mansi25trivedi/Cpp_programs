@@ -231,5 +231,22 @@ int main(){
         }
         cout<<endl;
     }
+
+    cout<<endl<<"triangle  pattern with numbers in reverse"<<endl;
+    for(int i = n ; i>=1 ; i--){
+        //for the spaces
+        for(int j = 1 ; j<i;j++){
+            cout<<"  ";
+        }
+        //for the numbers
+        for(int j=n ; j>=i ; j--){
+            cout<<j<<" ";
+        }
+        //for other half og the triangle
+        for(int j=i+1 ; j<=n ; j++){
+            cout<<j<<" ";
+        }
+        cout<<endl;
+    }
     return 0;
 }
