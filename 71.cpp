@@ -28,5 +28,18 @@ int main(){
         }
     }
     cout<<"the count is : "<<count<<endl;
+
+    //Print factorial of each number from 1 to n
+    cout<<endl<<"Print factorial of each number from 1 to n"<<endl;
+    cin>>n;
+    for(int i = 1 ; i<=n ; i++){
+        int mul = 1;
+        int ik = i;
+        while(ik != 0){
+            mul *= ik;
+            ik--;
+        }
+        cout<<"Factorial of "<<i<<" is "<<mul<<endl;
+    }
     return 0;
 }
