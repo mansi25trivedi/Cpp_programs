@@ -41,5 +41,35 @@ int main(){
         }
         cout<<"Factorial of "<<i<<" is "<<mul<<endl;
     }
+
+    cout<<endl<<"Find the smallest and largest digit in a given number."<<endl;
+    int num;
+    cout<<"enter any number: ";
+    cin>>num;
+    int i = num , ct = 0;
+    while(i != 0){
+        int r = i % 10;
+        i  /= 10;
+        ct++;
+    }
+    int arr[ct];
+    int s = num , j = 0;
+    while( j != ct){
+        int p = s % 10;
+        s /= 10;
+        arr[j]=p;
+        j++; 
+    }
+    int max = arr[0],minn = arr[0];
+    for(int i = 0 ; i<ct; i++){
+        if(max<=arr[i]){
+            max = arr[i];
+        }
+        if(minn>=arr[i]){
+            minn = arr[i];
+        }
+    }
+    cout<<"max element is "<<max<<" and min element is "<<minn<<endl;
+    
     return 0;
 }
