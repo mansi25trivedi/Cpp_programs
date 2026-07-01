@@ -71,5 +71,21 @@ int main(){
     }
     cout<<"max element is "<<max<<" and min element is "<<minn<<endl;
     
+    cout<<endl<<"Print the sum of all odd digits and even digits separately in a number. "<<endl;
+    int numm;
+    cout<<"enter any num: ";
+    cin>>numm;
+    int se = 0 , so  =0;
+
+    while(numm != 0){
+        int r = numm % 10;
+        numm = numm /10;
+        if(r%2==0){
+            se += r;
+        }else{
+            so += r;
+        }
+    }
+        cout<<"the sum of even digit is: "<<se<<endl<<"sum of odd digits: "<<so<<endl;
     return 0;
 }
