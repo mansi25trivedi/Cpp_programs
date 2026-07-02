@@ -87,5 +87,18 @@ int main(){
         }
     }
         cout<<"the sum of even digit is: "<<se<<endl<<"sum of odd digits: "<<so<<endl;
+
+    cout<<endl<<" Take 5 numbers as input. If the user enters 0, skip it using continue. At the end, print the sum of all non-zero numbers entered. "<<endl;
+    int number ;
+    int summ = 0;
+    cout<<"enter any five numbers: ";
+    for(int i = 0 ;  i< 5 ; i++){
+    cin>>number;
+    if(number == 0){
+        continue;
+    }
+    summ+=number;
+}
+cout<<"sum is: "<<summ;
     return 0;
 }
