@@ -32,6 +32,18 @@ void printevennums(int n){
     }
 
 }
+void printoddnum(int n){
+    if(n==0 || n==1){
+        cout<<1<<" ";
+        return;
+    }
+    if(n%2!=0){
+        printoddnum(n-2);
+        cout<<n<<" "; 
+    }else{
+        printoddnum(n-1);
+    }
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -42,5 +54,7 @@ int main(){
     printrenum(n);
     cout<<endl<<"Print only even numbers from 1 to n recursively."<<endl;
     printevennums(n);
+    cout<<endl<<"Print only odd numbers from 1 to n recursively"<<endl;
+    printoddnum(n);
 
 }
