@@ -24,13 +24,18 @@ void printevennums(int n){
         return;
     }
     if(n%2==0){
-        
         printevennums(n-2);
         cout<<n<<" ";
     }else{
         printevennums(n-1);
     }
-
+}
+int sumofnums(int n){
+    int sum = 0;
+    if(n==0){
+        return 0;
+    }
+    return n + sumofnums(n-1);
 }
 void printoddnum(int n){
     if(n==0 || n==1){
@@ -56,5 +61,7 @@ int main(){
     printevennums(n);
     cout<<endl<<"Print only odd numbers from 1 to n recursively"<<endl;
     printoddnum(n);
+    cout<<endl<<"Print sum of first n natural numbers recursively."<<endl;
+    cout<<sumofnums(n);
 
 }
