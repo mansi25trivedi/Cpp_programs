@@ -49,6 +49,13 @@ void printoddnum(int n){
         printoddnum(n-1);
     }
 }
+int fac(int n){
+    int mul = 1;
+    if(n==0 || n ==1){
+        return 1;
+    }
+    return n*fac(n-1);
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -63,5 +70,7 @@ int main(){
     printoddnum(n);
     cout<<endl<<"Print sum of first n natural numbers recursively."<<endl;
     cout<<sumofnums(n);
+    cout<<endl<<"Print factorial of a number recursively"<<endl;
+    cout<<fac(n);
 
 }
