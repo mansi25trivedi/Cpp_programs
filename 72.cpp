@@ -56,6 +56,12 @@ int fac(int n){
     }
     return n*fac(n-1);
 }
+int power(int num , int p){
+    if(p==0){
+        return 1;
+    }
+    return num*power(num,p-1);
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -72,5 +78,7 @@ int main(){
     cout<<sumofnums(n);
     cout<<endl<<"Print factorial of a number recursively"<<endl;
     cout<<fac(n);
+    cout<<endl<<"Calculate power of a number (xⁿ) using recursion."<<endl;
+    cout<<power(n,n);
 
 }
