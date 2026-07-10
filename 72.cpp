@@ -62,6 +62,15 @@ int power(int num , int p){
     }
     return num*power(num,p-1);
 }
+int fibnum(int n){
+    if(n==0){
+        return 0;
+    }
+    if(n==1){
+        return 1;
+    }
+    return fibnum(n-2)+fibnum(n-1);
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -80,5 +89,7 @@ int main(){
     cout<<fac(n);
     cout<<endl<<"Calculate power of a number (xⁿ) using recursion."<<endl;
     cout<<power(n,n);
+    cout<<endl<<"Find nth Fibonacci number recursively"<<endl;
+    cout<<fibnum(n);
 
 }
