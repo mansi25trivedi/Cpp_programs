@@ -71,6 +71,13 @@ int fibnum(int n){
     }
     return fibnum(n-2)+fibnum(n-1);
 }
+void fibonac(int n, int a, int b){
+    if(n == 0){
+        return ;
+    }
+    cout<<a<<" ";
+    fibonac(n-1,b,a+b);
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -91,5 +98,7 @@ int main(){
     cout<<power(n,n);
     cout<<endl<<"Find nth Fibonacci number recursively"<<endl;
     cout<<fibnum(n);
+    cout<<endl<<"Print Fibonacci series up to n terms recursively."<<endl;
+    fibonac(n,0, 1);
 
 }
