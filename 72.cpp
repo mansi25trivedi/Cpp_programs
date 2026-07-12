@@ -78,6 +78,12 @@ void fibonac(int n, int a, int b){
     cout<<a<<" ";
     fibonac(n-1,b,a+b);
 }
+int sumd(int n){
+    if(n==0){
+        return 0;
+    }
+    return n%10 + sumd(n/10);
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -100,5 +106,6 @@ int main(){
     cout<<fibnum(n);
     cout<<endl<<"Print Fibonacci series up to n terms recursively."<<endl;
     fibonac(n,0, 1);
+    cout<<endl<<" Find sum of digits of a number recursively.: "<<sumd(n);
 
 }
