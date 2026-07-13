@@ -84,6 +84,13 @@ int sumd(int n){
     }
     return n%10 + sumd(n/10);
 }
+int countdigi(int n){
+    if(n<10){
+        return 1;
+    }
+    return 1 + countdigi(n/10);
+
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -107,5 +114,6 @@ int main(){
     cout<<endl<<"Print Fibonacci series up to n terms recursively."<<endl;
     fibonac(n,0, 1);
     cout<<endl<<" Find sum of digits of a number recursively.: "<<sumd(n);
+    cout<<endl<<"Count the number of digits in a number recursively. "<<countdigi(n);
 
 }
