@@ -1,4 +1,4 @@
-//RECURSION BAED
+//RECURSION BASED
 #include<iostream>
 using namespace std;
 void printnum(int n){
@@ -91,6 +91,13 @@ int countdigi(int n){
     return 1 + countdigi(n/10);
 
 }
+void revnum(int n){
+    if(n<=0){
+        return;
+    }
+    cout<<n%10;
+    revnum(n/10);
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -115,5 +122,7 @@ int main(){
     fibonac(n,0, 1);
     cout<<endl<<" Find sum of digits of a number recursively.: "<<sumd(n);
     cout<<endl<<"Count the number of digits in a number recursively. "<<countdigi(n);
+    cout<<endl<<"reverse a number recursively: ";
+    revnum(n);
 
 }
