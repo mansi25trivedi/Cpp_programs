@@ -98,6 +98,12 @@ void revnum(int n){
     cout<<n%10;
     revnum(n/10);
 }
+int prod(int n){
+    if(n==0){
+        return 1;
+    }
+    return n%10 * prod(n/10);
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -124,5 +130,6 @@ int main(){
     cout<<endl<<"Count the number of digits in a number recursively. "<<countdigi(n);
     cout<<endl<<"reverse a number recursively: ";
     revnum(n);
+    cout<<endl<<"Find products of digits of a number recursively :"<<prod(n);
 
 }
