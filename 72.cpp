@@ -104,6 +104,13 @@ int prod(int n){
     }
     return n%10 * prod(n/10);
 }
+int hcf(int a , int b){
+    if(b==0){
+        return a ;
+    }
+    return hcf(b, a%b);
+
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -131,5 +138,12 @@ int main(){
     cout<<endl<<"reverse a number recursively: ";
     revnum(n);
     cout<<endl<<"Find products of digits of a number recursively :"<<prod(n);
+    cout<<endl<<"Find GCD (HCF) of two numbers using Euclid’s algorithm recursively";
+    int a, b;
+    cout<<"enter the value of a: ";
+    cin>>a;
+    cout<<"enter the value of b: ";
+    cin>>b;
+    cout<<endl<<hcf(a,b);
 
 }
