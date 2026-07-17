@@ -111,6 +111,18 @@ int hcf(int a , int b){
     return hcf(b, a%b);
 
 }
+int dec_to_bin(int n){
+    int r, ans = 0;
+    if(n==0){
+        return 0;
+    }
+    while(n!=0){
+        r = n%2;
+        ans = ans*10 + r;
+        n=n/2;
+    }
+    return ans;
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -145,5 +157,6 @@ int main(){
     cout<<"enter the value of b: ";
     cin>>b;
     cout<<endl<<hcf(a,b);
+    cout<<endl<<"Convert a number to binary recursively. "<<dec_to_bin(n);
 
 }
