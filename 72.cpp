@@ -123,6 +123,16 @@ int dec_to_bin(int n){
     }
     return ans;
 }
+int sumeven(int n){
+    if(n == 0 || n==1){
+        return  0;
+    }
+    if(n%2 == 0){
+        return n+sumeven(n-2);
+    }else{
+        return sumeven(n-1);
+    }
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -158,5 +168,6 @@ int main(){
     cin>>b;
     cout<<endl<<hcf(a,b);
     cout<<endl<<"Convert a number to binary recursively. "<<dec_to_bin(n);
+    cout<<endl<<"Calculate the sum of first n even numbers recursively. "<<sumeven(n);
 
 }
