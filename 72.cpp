@@ -133,6 +133,16 @@ int sumeven(int n){
         return sumeven(n-1);
     }
 }
+int oddsum(int n){
+    if(n==0){
+        return 0;
+    }
+    if(n%2==0){
+        return oddsum(n-1);
+    }else{
+        return n+oddsum(n-2);
+    }
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -169,5 +179,6 @@ int main(){
     cout<<endl<<hcf(a,b);
     cout<<endl<<"Convert a number to binary recursively. "<<dec_to_bin(n);
     cout<<endl<<"Calculate the sum of first n even numbers recursively. "<<sumeven(n);
+    cout<<endl<<"Calculate the sum of first n odd numbers recursively. "<<oddsum(n);
 
 }
