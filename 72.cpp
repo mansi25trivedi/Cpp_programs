@@ -143,6 +143,14 @@ int oddsum(int n){
         return n+oddsum(n-2);
     }
 }
+void printstarline(int n){
+    if(n==0){
+        return;
+    }
+    cout<<"* ";
+    printstarline(n-1);
+
+}
 int main(){
     cout<<"Print numbers from 1 to n using recursion."<<endl;
     int n;
@@ -180,5 +188,7 @@ int main(){
     cout<<endl<<"Convert a number to binary recursively. "<<dec_to_bin(n);
     cout<<endl<<"Calculate the sum of first n even numbers recursively. "<<sumeven(n);
     cout<<endl<<"Calculate the sum of first n odd numbers recursively. "<<oddsum(n);
+    cout<<endl<<"Print a line of n stars recursively. "<<endl;
+    printstarline(n);
 
 }
