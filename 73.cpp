@@ -12,10 +12,26 @@ void squarestars(int n){
     cout<<endl;
     squarestars(n-1);
 }
+void trianglestar(int n){
+    if(n==0){
+        return ;
+    }
+    trianglestar(n-1);
+    int i = 1;
+    while(i<=n){
+        cout<<"* ";
+        i++;
+    }
+    cout<<endl;
+    
+}
 int main(){
     int n;
     cout<<"enter any number: ";
     cin>>n;
     cout<<endl<<"Print a square of stars recursively (n×n). "<<endl;
     squarestars(n);
+    cout<<endl<<"Print a triangle of stars recursively (top-down)."<<endl;
+    trianglestar(n);
+
 }
